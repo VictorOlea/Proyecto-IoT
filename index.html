@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ESP IOT DASHBOARD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.7/all/gauge.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <div class="topnav">
+      <h1>ESP32 - DASHBOARD - ESP32</h1>
+    </div>
+    <div class="gauge">
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title">Humedad del Aire</p>
+          <canvas id="gauge-humidity"></canvas>
+        </div>
+        <div class="card">
+          <p class="card-title">Temperatura Ambiente</p>
+          <canvas id="gauge-temperature"></canvas>
+        </div>
+        <div class="card">
+          <p class="card-title">Humedad del Suelo</p>
+          <canvas id="gauge-humidity-soil"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="chart">
+      <div class="card-grid">
+        <div id="chart-humidity" class="container"></div>
+        <div id="chart-temperature" class="container"></div>
+        <div id="chart-humidity-soil" class="container"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
